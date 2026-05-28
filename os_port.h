@@ -23,7 +23,7 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  *
  * @author Oryx Embedded SARL (www.oryx-embedded.com)
- * @version 2.6.2
+ * @version 2.6.4
  **/
 
 #ifndef _OS_PORT_H
@@ -118,6 +118,9 @@
 //TI SYS/BIOS port?
 #elif defined(USE_SYS_BIOS)
    #include "os_port_sys_bios.h"
+//Wind River VxWorks port?
+#elif defined(USE_VXWORKS)
+   #include "os_port_vxworks.h"
 //Zephyr port?
 #elif defined(USE_ZEPHYR)
    #include "os_port_zephyr.h"
